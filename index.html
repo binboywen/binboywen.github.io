@@ -199,6 +199,11 @@
       const name = params.get('name');
       const type = params.get('type');
       const degree = params.get('degree');
+	  if(type === 'visitor'){
+	  const passType = document.getElementById('pass-type');
+        passType.innerText = '登记访客，预约授权！';
+		degreeField.innerHTML = '校外访客';
+	  }
       if (type === 'in') {
         const passType = document.getElementById('pass-type');
         passType.innerText = '研究生用户，入校授权有效！';
