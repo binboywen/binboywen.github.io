@@ -115,7 +115,25 @@
       padding-left: 16px;
       padding-right: 16px;
     }
+	.tr {
+	  display: flex;
+	  width: 100%;
+	  justify-content: center;
+	  height: 3rem;
+	  align-items: center;
+    }
+	.but{
+      background-color: #09B094;
+      box-shadow: all;
+      color: #F5F5F5;
+      border-radius: 5px;
+      padding: 5px 20px;
+	}
 
+ .erwei{
+  line-height: 0;
+  font-size: 15px;
+ }
     .layout {
       display: flex;
       justify-content: start;
@@ -189,6 +207,11 @@
       <h3 class="marquee" style="width: 180px;">
         <span id='time'>2020-06-01 18:58:10</span>
       </h3>
+    </div>
+	<div class="tr">
+		<button id="but" class="but">
+		   <p id="erwei" class="erwei">前往个人二维码</p>
+	   </button>
     </div>
   </div>
   <script>
